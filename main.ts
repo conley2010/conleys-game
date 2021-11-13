@@ -911,6 +911,7 @@ sprites.onDestroyed(SpriteKind.Player, function(mysprite: Sprite) {
         }
     })
 })
+let admintext = "admin activated"
 
 
 let mySprite3 = sprites.create(img`
@@ -938,6 +939,7 @@ forever(function() {
 if (admin == 1) {
 admin2=1
 }   
+
 if (admin == 0) {
 admin2=0
 
@@ -958,7 +960,7 @@ mySprite.ay=500
     mySprite.setFlag(SpriteFlag.Ghost, false)
 
 }
-
+        console.log(admintext)
 
 })})
 
@@ -986,8 +988,7 @@ controller.combos.attachSpecialCode(function() {
         mySprite.setFlag(SpriteFlag.Ghost, false)
 
     }
-
-
+console.log(admintext)
 })
 
 
